@@ -24,7 +24,7 @@ p{
 }
 
 .main-content {
-   width: 50%;
+   width: 60%;
     padding: 10px;
     border: 1px solid #333;
     border-radius: 8px;
@@ -33,7 +33,7 @@ p{
     overflow-y: auto; /* Permet le défilement pour le contenu principal */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     min-height: 700px; /* Increased height to accommodate grid */
-    max-height: 90vh; /* Prevent overflow beyond viewport */
+    max-height: 95vh; /* Prevent overflow beyond viewport */
     display: flex;
     flex-direction: column;
 }
@@ -82,7 +82,7 @@ p{
 }
 
 .sidebar {
-    width: 25%; /* Ajustez la largeur selon vos préférences */
+    width: 20%; /* Ajustez la largeur selon vos préférences */
     overflow-y: auto; /* Permet le défilement si le contenu est trop long */
     padding: 15px;
     border: 1px solid #333;
@@ -247,7 +247,6 @@ button:hover {
     padding: 1rem;
     max-width: 800px;
     margin: 0 auto;
-    width: 100%;
 }
 
 .scene-text {
@@ -257,6 +256,7 @@ button:hover {
     margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.5;
+    width: 100%;
 }
 
 .scene-choices {
@@ -467,7 +467,7 @@ button:hover {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 1px;
-    background-color: #333;
+    background-color: #f5f5f5;
     padding: 5px;
     border-radius: 8px;
     width: 100%;
@@ -476,8 +476,8 @@ button:hover {
 }
 
 .grid-square {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
+    background-color: #333;
+    border: 1px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
