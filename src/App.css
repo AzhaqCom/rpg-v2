@@ -48,15 +48,10 @@ p {
     display: flex;
     gap: 3px;
     flex-direction: column;
+    position: relative;
 }
 
 /* Scene component styling for consistent heights */
-.scene-container {
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .rest-panel-container {
     min-height: 400px;
@@ -279,7 +274,9 @@ button:hover {
     align-items: flex-start;
     padding: 1rem;
     max-width: 800px;
-    margin: 0 auto;
+
+    min-height: 400px;
+
 }
 
 .scene-text {
@@ -290,17 +287,18 @@ button:hover {
     font-size: 1.2rem;
     line-height: 1.5;
     width: 100%;
+    min-width: 100%;
 }
 
 .scene-choices {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: auto;
-    /* Push choices to bottom */
     flex-shrink: 0;
-    /* Prevent choices from shrinking */
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0;
 }
 
 .enemy-display-container {
